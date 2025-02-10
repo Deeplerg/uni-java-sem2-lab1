@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class PostsViewController {
     @ResponseBody
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public ModelAndView messages() {
+    public ModelAndView list() {
         ModelAndView mav = new ModelAndView("list");
         mav.addObject("appName", "Моё супер приложение");
         return mav;
