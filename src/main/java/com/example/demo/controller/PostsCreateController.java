@@ -13,7 +13,7 @@ public class PostsCreateController {
     private PostService postService;
 
     @RequestMapping(path = "/new", method = RequestMethod.GET)
-    public String list() {
+    public String create() {
         return "create";
     }
 
